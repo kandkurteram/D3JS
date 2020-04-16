@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Gapminder Clone</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/d3-tip.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">   
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css"> 
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"></a>      
+        </div>
+    </nav>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <button id="play-button" class="btn btn-primary" autofocus = "true"> Play </button>
+                <button id="reset-button" class="btn btn-primary">Reset</button>
+            </div>
+            <div id="slider-div" class="col-md-6">
+                <label>Year: <span id="year">1800</span></label>
+                <div id="date-slider"></div>
+            </div>
+            
+            <div class="col-md-3">
+                <select id="continent-select" class="form-control">
+                    <option selected value="all">All</option>
+                    <option value="europe">Europe</option>
+                    <option value="americas">Americas</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="chart-area"></div>  
+            </div>
+        </div>
+    </div>
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<!-- Custom JS -->
+<script src="js/main_Ram_GAPMinder_v2.js"></script>
+<!-- <script src="js/main.js"></script> -->
+
+</body>
+</html>
